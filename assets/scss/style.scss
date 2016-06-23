@@ -1,0 +1,93 @@
+/* ===========================================
+   CSS Reset
+   =========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0 none;
+  font-size: 100%;
+  font-style: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ===========================================
+   General Imports
+   =========================================== */
+
+@import "_vars";
+@import "_mixins";
+
+/* ===========================================
+   General Style
+   =========================================== */
+
+.main_content {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.container {
+  min-width: 80%;
+  height: auto;
+  margin-bottom: 28px;
+  @include flex(row, space-between , null);
+  flex-wrap: wrap;
+}
+
+/* Imagen Principal
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+#img_principal {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding-top: 35px;
+}
+
+/* ===========================================
+   Templates Style
+   =========================================== */
+
+@import "templates/_header";
+@import "templates/_footer";
+@import "templates/_espaciado";
+
+/* ===========================================
+   Contents Style
+   =========================================== */
+
+@import "contents/_ctn-main";
+@import "contents/_ctn-decano";
+@import "contents/_ctn-autoridades";
+
+/* ===========================================
+   Includes Style
+   =========================================== */
+
+@import "includes/_menu-secondary";
+@import "includes/_main-social";
+@import "includes/_social";
+
+/* ===========================================
+   Scroll Style
+   =========================================== */
+
+@import "_scroll";
+
+/* ===========================================
+   Accordion Style
+   =========================================== */
+
+@import "_style-accordion";

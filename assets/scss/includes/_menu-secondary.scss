@@ -1,0 +1,209 @@
+/* Menu Secundario
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu_secondary {
+  max-width: 100%;
+  height: auto;
+  background-color: $bgc_content;
+  @include flex(row, space-between , center);
+  .content_icons {
+    background-color: rgb(255, 255, 255);
+    @include flex(column, flex-start , center);
+    margin: 10px 0px 10px 0px;
+    div {
+      background-color: $bgc_primary;
+      border-radius: 50%;
+      @include flex(row, center , center);
+      img {
+        display: table;
+      }
+    }
+    div:hover {
+      background-color: $bgc_secondary;
+      transition: 0.5s;
+    }
+    span {
+      width: 100%;
+      @include flex(column, center , center);
+      flex-wrap: wrap;
+      h4 {
+        color: $bgc_primary;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+} //end-menu_secondary
+  
+/* Divider-Triangle
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.divider_triangle {
+  width: 100%;
+  height: auto;
+  @include flex(row, center, center);
+
+  .triangulo_inf {
+    @include triangulo_inf(50px, 50px, 28px, $bgc_content);
+  }
+
+} //end-pre_content
+
+
+/* Mobile Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px){
+  .menu_secondary {
+    padding: 2px 5px 2px 5px;
+    @include flex(row, center , null);
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    .content_icons {
+      width: 80px;
+      height: 80px;
+      margin: 10px 10px 10px 10px;
+      div {
+        width: 45px;
+        height: 45px;
+        margin: 5px 0px 5px 0px;
+        img {
+          width: 60%;
+        }
+        #alumno {
+          width: 25%;
+        }
+        #intranet {
+          width: 40%;
+        }
+        #biblioteca {
+          width: 68%;
+        }
+      }
+      span {
+        h4 {
+          font-size: 0.58rem;
+        }
+      }
+    }
+  }
+}
+
+/* Phablet Styles
+  ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 551px) and (max-width: 749px){
+  .menu_secondary {
+    padding: 20px 4% 20px 4%;
+    .content_icons {
+      width: 90px;
+      height: 90px;
+      div {
+        width: 60px;
+        height: 60px;
+        margin: 5px 0px 5px 0px;
+        img {
+          width: 60%;
+        }
+        #alumno {
+          width: 25%;
+        }
+        #intranet {
+          width: 40%;
+        }
+        #biblioteca {
+          width: 68%;
+        }
+      }
+      span {
+        h4 {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) and (max-width: 999px){
+  .menu_secondary {
+    padding: 20px 5% 20px 5%;
+    .content_icons {
+      width: 120px;
+      height: 120px;
+      div {
+        width: 80px;
+        height: 80px;
+        margin: 8px 0px 8px 0px;
+        img {
+          width: 60%;
+        }
+        #alumno {
+          width: 26%;
+        }
+        #intranet {
+          width: 40%;
+        }
+        #biblioteca {
+          width: 68%;
+        }
+      }
+      span {
+        h4 {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) and (max-width: 1199px){
+  .menu_secondary {
+    padding: 20px 7.5% 20px 7.5%;
+    .content_icons {
+      width: 140px;
+      height: 140px;
+      div {
+        width: 80px;
+        height: 80px;
+        margin: 15px 0px 15px 0px;
+        #biblioteca {
+          width: 70%;
+        }
+      }
+      span {
+        h4 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop HD Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1200px){
+  .menu_secondary {
+    padding: 20px 10% 20px 10%;
+    .content_icons {
+      width: 170px;
+      height: 170px;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 20px 0px 20px 0px;
+    }
+    span {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+}

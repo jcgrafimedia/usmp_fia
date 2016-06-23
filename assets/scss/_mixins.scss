@@ -1,0 +1,29 @@
+
+/* Layout
+   ––––––––––––––––––––––––––––––––––––––––––– */
+   
+@mixin flex ($direction , $justify , $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* Triangulos
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin triangulo_inf ($border-l, $border-r, $border-t, $color) {
+	width: 0;
+    height: 0;
+    border-left: $border-l solid transparent;
+    border-right: $border-r solid transparent;
+    border-top: $border-t solid $color;
+}
+
+@mixin triangulo_sup ($border-l, $border-r, $border-b, $color) {
+	width: 0;
+    height: 0;
+    border-left: $border-l solid transparent;
+    border-right: $border-r solid transparent;
+    border-bottom: $border-b solid $color;
+}

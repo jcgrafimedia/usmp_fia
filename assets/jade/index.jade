@@ -1,0 +1,20 @@
+extends layouts/layout
+
+block header
+	include layouts/header
+
+	// 	Imagen Principal
+		–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+	
+	img(id="img_principal" src="assets/img/header.jpg")
+	
+	include includes/menu_secondary
+
+block content
+
+	include contents/ctn_main
+
+	include includes/main_social
+	
+block footer
+	include layouts/footer

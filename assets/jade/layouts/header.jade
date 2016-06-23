@@ -1,0 +1,103 @@
+// 	HEADER
+	=========================================================
+
+header(id="header")
+	div(class="nav_icons")
+		a(href="#")
+			i(class="fa fa-bars fa-lg" , id="open-button" , onclick="evento_menu()")
+		div
+			a(href="http://www.usmp.edu.pe/index.php" , target="_black")
+				i(class="fa fa-home fa-lg")
+			a(href="#")
+				i(class="fa fa-phone fa-lg")
+			a(href="#")
+				i(class="fa fa-map-marker fa-lg")
+			a(href="#")
+				i(class="fa fa-envelope fa-lg")
+	div(id="menu_dinamic" , class="menu_content")
+		div(id="main_menu")
+			a(id="logo" , href="http://localhost/usmp_fia/")
+				img(src="http://localhost/usmp_fia/assets/img/usmp_fia.png" , style="cursor:pointer")
+			nav
+				ul
+					li: a(href="http://www.usmp.edu.pe/" , target="_black" , id="usmp") USMP
+					li
+						a(href="" , id="facultad") FACULTAD
+							div(class="triangulo_inf")
+						ul(id="menu_fa" , style="display: none")
+							li: a(href="http://localhost/usmp_fia/facultad/decano") Palabras del decano
+							li: a(href="http://localhost/usmp_fia/facultad/autoridades") Autoridades
+							li: a(href="directorio") Directorio
+							li: a(href="acreditaciones") Acreditaciones
+							li: a(href="convenios") Convenios
+							li: a(href="anual") Memori anual usmp
+							li: a(href="historia") Historia
+							li: a(href="organigrama") Organigrama
+					li 
+						a(href="" , id="escuelas") ESCUELAS
+							div(class="triangulo_inf")
+						ul(id="menu_esc" , style="display: none")
+							li: a(href="#") Ciencias Aeronáuticas
+							li: a(href="#") Ingeniería Civil
+							li: a(href="#") Ingeniería de Computación y Sistemas
+							li: a(href="#") Ingeniería Electrònica
+							li: a(href="#") Ingeniería Industrial
+							li: a(href="#") Ingeniería en Industrias Alimentarias
+							li: a(href="#") Arquitectura
+					li: a(href="http://www.usmp.edu.pe/posgradofia/" , id="posgrados" , target="_black") POSGRADOS
+					li: a(href="http://www.usmp.edu.pe/ivuc/" , id="institutos" , target="_black") INSTITUTOS
+					li: a(href="http://www.epu.edu.pe/" , id="epu" , target="_black") EPU
+					li: a(href="http://admision.usmp.edu.pe/" , id="admision" , target="_black") ADMISIÓN
+	div(id="container_wrap")
+		div(class="menu-wrap")
+				nav(class="menu")
+					div(class="icon-list")
+
+						a(href="http://www.usmp.edu.pe/index.php" , target="_black")
+							i(class="fa fa-home fa-lg")
+								span Usmp
+
+						a(href="#")
+							i(class="fa fa-university fa-lg")
+								span Facultad
+							ul(id="accordion11" , style="display: none")
+								li: a(href="#") Palabras del decano
+								li: a(href="#") Autoridades
+								li: a(href="#") Directorio
+								li: a(href="#") Acreditaciones
+								li: a(href="#") Convenios
+								li: a(href="#") Memori anual usmp
+								li: a(href="#") Historia
+								li: a(href="#") Organigrama
+
+						a(href="#")
+							i(class="fa fa-book fa-lg")
+								span Escuelas
+							ul(id="accordion12" , style="display: none")
+								li: a(href="#") Ciencias Aeronáuticas
+								li: a(href="#") Ingeniería Civil
+								li: a(href="#") Ingeniería de Computación y Sistemas
+								li: a(href="#") Ingeniería Electrònica
+								li: a(href="#") Ingeniería Industrial
+								li: a(href="#") Ingeniería en Industrias Alimentarias
+								li: a(href="#") Arquitectura
+
+						a(href="http://www.usmp.edu.pe/posgradofia/" , target="_black")
+							i(class="fa fa-graduation-cap fa-lg")
+								span Posgrados
+
+						a(href="http://www.usmp.edu.pe/ivuc/" , target="_black")
+							i(class="fa fa-building-o fa-lg")
+								span Institutos
+
+						a(href="http://www.epu.edu.pe/" , target="_black")
+							i(class="fa fa-briefcase fa-lg")
+								span EPU
+
+						a(href="http://admision.usmp.edu.pe/" , target="_black")
+							i(class="fa fa-pencil-square-o fa-lg")
+								span Admisión
+
+				div(class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z")
+					svg(xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none")
+						path(d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z")

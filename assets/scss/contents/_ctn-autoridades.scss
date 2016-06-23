@@ -1,0 +1,230 @@
+/* Content Autoridades
+   ––––––––––––––––––––––––––––––––––––––––––– */
+   
+#autoridades {
+  width:100%;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .limitador {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0px 20px 0px;
+    background-color: $bgc_secondary;
+  }
+  .triangulo_inf {
+    @include triangulo_inf(4px, 4px, 4px , $bgc_primary);
+  }
+  article {
+    width: 100%;
+    height: auto;
+    header h3 {
+      font-size: 1.1rem;
+      margin: 10px 0px 10px 0px;
+      color: $fc_title;
+    }
+    section {
+      width: 100%;
+      @include flex(row, space-between , null);
+      .box {
+        width: 50%;
+        @include flex(row, null , null);
+        .text_autoridades {
+          width: 100%;
+          padding: 15px 20px 15px 20px;
+          background-color: rgb(131, 169, 191);
+          color: rgb(255, 255, 255);
+          @include flex(column, space-between , stretch);
+          p {
+            text-align: justify;
+          }
+          span {
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #box_1 {
+        margin-right: 20px;
+      }
+    }
+
+    ul {
+      li {
+        width: auto;
+        height: auto;
+        @include flex(row, flex-start , center);
+        a {
+          width: auto;
+          margin: 8px 0px 8px 0px;
+          @include flex(row, flex-start , center);
+          color: $bgc_primary;
+          font-size: 0.85rem;
+          .triangulo_inf {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px){
+  #autoridades {
+    article {
+      section {
+        flex-wrap: wrap;
+        .box {
+          width: 100%;
+          margin-bottom: 20px;
+          img {
+            width: 100px;
+            height: 140px;
+          }
+          .text_autoridades {
+            padding: 20px;
+            @include flex(column, center , stretch);
+            p {
+              display: none;
+            }
+            span {
+              font-size: 0.72rem;
+            }
+          }
+        }
+        #box_1 {
+          margin-right: 0px;
+        }
+      }
+    }
+    ul {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* Phablet Styles
+  ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 551px) and (max-width: 749px){
+  #autoridades {
+    article {
+      section {
+        flex-wrap: wrap;
+        .box {
+          width: 100%;
+          margin-bottom: 20px;
+          img {
+            width: 100px;
+            height: 140px;
+          }
+          .text_autoridades {
+            padding: 20px;
+            @include flex(column, center , stretch);
+            p {
+              display: none;
+            }
+            span {
+              font-size: 0.72rem;
+            }
+          }
+        }
+        #box_1 {
+          margin-right: 0px;
+        }
+      }
+    }
+    ul {
+      margin-left: 20px;
+    }
+  }
+}
+
+/* Tablet Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) and (max-width: 999px){
+  #autoridades {
+    article {
+      section {
+        flex-wrap: wrap;
+        .box {
+          width: 100%;
+          margin-bottom: 20px;
+          .text_autoridades {
+            padding: 20px;
+            @include flex(column, center , stretch);
+            p {
+              font-size: 0.8rem;
+            }
+            span {
+              font-size: 0.76rem;
+              margin-top: 20px;
+            }
+          }
+        }
+        #box_1 {
+          margin-right: 0px;
+        }
+      }
+    }
+    ul {
+      margin-left: 40px;
+    }
+  }
+}
+
+/* Desktop Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) and (max-width: 1199px){
+  #autoridades {
+    article {
+      section {
+        .box {
+          .text_autoridades {
+            p {
+              font-size: 0.75rem;
+            }
+            span {
+              font-size: 0.73rem;
+              margin-top: 10px;
+            }
+          }
+        }  
+      }
+    }
+    ul {
+      margin-left: 70px;
+    }
+  }
+}
+
+/* Desktop HD Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1200px){
+  #autoridades {
+    article {
+      section {
+        .box {
+          .text_autoridades {
+            p {
+              font-size: 0.8rem;
+            }
+            span {
+              font-size: 0.75rem;
+              margin-top: 10px;
+            }
+          }
+        }  
+      }
+    }
+    ul {
+      margin-left: 80px;
+    }
+  }
+}

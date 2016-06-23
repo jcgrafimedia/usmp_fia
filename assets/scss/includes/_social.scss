@@ -1,0 +1,423 @@
+/* Social
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.social {
+    width: 100%;
+    max-width: 100%;
+    background-color: $bgc_social;
+    @include flex(row, center , center);
+    #contact {
+      #telefono {
+        margin-bottom: 60px;
+        @include flex(row, null , null);
+        div {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $bgc_secondary;
+          margin-right: 12px;
+          @include flex(row, center , center);
+          i {
+            color: rgb(255, 255, 255);
+          }
+        }
+        span {
+          span {
+            color: rgb(255, 255, 255);
+          }
+          p {
+            color: $fc_footer;
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }  
+    .divider_social {
+      width: 1px;
+      background-color: $fc_footer; 
+    }
+    #social_group {
+      width: auto;
+      a {
+        @include flex(row, null , null);
+        #facebook {
+          margin-right: 20px;
+          margin-top: 3px;
+        }
+        #youtube {
+          margin-right: 15px;
+          margin-top: 3px;
+        }
+        #twitter {
+          margin-top: 3px;
+          margin-right: 14px;
+        }
+        i {
+          color: $bgc_secondary;
+        }
+        span {
+          color: $fc_footer;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .direccion {
+      margin-bottom: 60px;
+      @include flex(row, null , null);
+      div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $bgc_secondary;
+        margin-right: 12px;
+        @include flex(row, center , center);
+        i {
+          color: rgb(255, 255, 255);
+        }
+      }
+      span {
+        span {
+          color: rgb(255, 255, 255);
+          font-size: 1rem;
+        }
+        p {
+          color: $fc_footer;
+          font-size: 1rem;
+        }
+      }
+    }
+  } //end-social
+
+
+/* Mobile Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px){
+  .social {
+    height: 170px;
+    padding-left: 10px;
+    #contact {
+      @include flex(column, space-between , space-between);
+      #telefono {
+        margin-bottom: 30px;
+        div {
+          width: 28px;
+          height: 28px;
+        }
+        span {
+          span {
+            font-size: 0.6rem;
+          }
+          p {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      .direccion {
+        margin-bottom: 0px;
+        @include flex(row, null , null);
+        div {
+          width: 28px;
+          height: 28px;
+        }
+        span {
+          span {
+            font-size: 0.6rem;
+          }
+          p {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+    #social_group {
+      a {
+        margin: 20px 15px 20px 15px;
+        #facebook {
+          margin-right: 15px;
+          margin-top: 0px;
+        }
+        #youtube {
+          margin-right: 10px;
+          margin-top: 0px;
+        }
+        #twitter {
+          margin-top: 0px;
+          margin-right: 9px;
+        }
+        span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .direccion {
+      span {
+        span {
+          font-size: 0.7rem;
+        }
+        p {
+          width: 130px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .divider_social {
+      height: 120px;
+      margin: 0px 0px 0px 15px;
+    }
+    #direccion {
+      display: none;
+    }
+    #direccion_min {
+      display: block;
+    }
+    #divider_2 {
+      display: none;
+    }
+  }
+}
+
+/* Phablet Styles
+  ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 551px) and (max-width: 749px){
+  .social {
+    height: 190px;
+    #contact {
+      @include flex(column, space-between , space-between);
+      #telefono {
+        margin-bottom: 30px;
+        div {
+          width: 35px;
+          height: 35px;
+        }
+        span {
+          span {
+            font-size: 0.7rem;
+          }
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .direccion {
+        margin-bottom: 0px;
+        @include flex(row, null , null);
+        div {
+          width: 35px;
+          height: 35px;
+        }
+        span {
+          span {
+            font-size: 0.7rem;
+          }
+          p {
+            width: 140px;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }  
+    #social_group {
+      a {
+        margin: 20px 10px 20px 10px;
+        #facebook {
+          margin-right: 20px;
+          margin-top: 1px;
+        }
+        #youtube {
+          margin-right: 15px;
+          margin-top: 1px;
+        }
+        #twitter {
+          margin-top: 1px;
+          margin-right: 14px;
+        }
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .divider_social {
+      height: 140px;
+      margin: 0px 20px 0px 40px;
+    }
+    #direccion {
+      display: none;
+    }
+    #direccion_min {
+      display: block;
+    }
+    #divider_2 {
+      display: none;
+    }
+  }
+}
+
+/* Tablet Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) and (max-width: 999px){
+  .social {
+    height: 210px;
+    #telefono {
+      margin-bottom: 60px;
+      div {
+        width: 35px;
+        height: 35px;
+      }
+      span {
+        span {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    #social_group {
+      a {
+        margin: 20px 10px 20px 10px;
+        #facebook {
+          margin-right: 20px;
+          margin-top: 1px;
+        }
+        #youtube {
+          margin-right: 15px;
+          margin-top: 1px;
+        }
+        #twitter {
+          margin-top: 1px;
+          margin-right: 14px;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .direccion {
+      div {
+        width: 35px;
+        height: 35px;
+      }
+      span {
+        span {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .divider_social {
+      height: 160px;
+      margin: 0px 40px 0px 40px;
+    }
+    #direccion_min {
+      display: none;
+    }
+  }
+}
+
+/* Desktop Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) and (max-width: 1199px){
+  .social {
+    height: 230px;
+    #telefono {
+      margin-bottom: 60px;
+      span {
+        span {
+          font-size: 0.9rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    #social_group {
+      a {
+        margin: 20px 15px 20px 15px;
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .direccion {
+      span {
+        span {
+          font-size: 0.9rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .divider_social {
+      height: 180px;
+      margin: 0px 50px 0px 50px;
+    }
+    #direccion_min {
+      display: none;
+    }
+  }
+}
+
+/* Desktop HD Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1200px){
+  .social {
+    height: 250px;
+    #telefono {
+      margin-bottom: 60px;
+      span {
+        span {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    #social_group {
+      a {
+        margin: 20px 20px 20px 20px;
+        #facebook {
+          margin-right: 20px;
+          margin-top: 3px;
+        }
+        #youtube {
+          margin-right: 15px;
+          margin-top: 3px;
+        }
+        #twitter {
+          margin-top: 3px;
+          margin-right: 14px;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .direccion {
+      span {
+        span {
+          font-size: 1rem;
+        }
+        p {
+          width: 218px;
+          font-size: 1rem;
+        }
+      }
+    }
+    .divider_social {
+      margin: 0px 60px 0px 60px;
+      height: 200px;
+    }
+    #direccion_min {
+      display: none;
+    }
+  }
+}

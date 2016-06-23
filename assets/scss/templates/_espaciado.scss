@@ -1,0 +1,54 @@
+
+/* Espaciado Layout Secondary
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+//Incluido solo en la vista de "layout_secondary" ubicado en la ruta (app/views/templates/layout_secondary.php)
+
+#espaciado {
+  width: 100%;
+  background-color: rgb(220, 217, 218);
+}
+
+/* Mobile Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px){
+  #espaciado {
+    height: 35px;
+  }
+}
+
+/* Phablet Styles
+  ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 551px) and (max-width: 749px){
+  #espaciado {
+    height: 35px;
+  }
+}
+
+/* Tablet Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) and (max-width: 999px){
+  #espaciado {
+    height: 35px;
+  }
+}
+
+/* Desktop Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) and (max-width: 1199px){
+  #espaciado {
+    height: 105px;
+  }
+}
+
+/* Desktop HD Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1200px){
+  #espaciado {
+    height: 116px;
+  }
+}

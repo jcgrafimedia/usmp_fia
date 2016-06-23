@@ -1,0 +1,139 @@
+/* Social Principal
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+.main_social {
+    width: 100%;
+    background-image: url('../img/jovenes2.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    div {
+      width: 100%;
+      @include flex(row, center , center);
+      a {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        background-color: $bgc_primary;
+        border-radius: 50%;
+        @include flex(row, center , center);
+        border-radius: 50%;
+        i {
+          color: rgb(255, 255, 255);
+          }
+      }
+    }  
+    a:hover {
+      background-color: $bgc_secondary;
+      transition: 0.5s;
+    }
+
+} //end-main_social
+
+
+/* Mobile Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 550px){
+  .main_social {
+    height: 100px;
+    div {
+      height: 100px;
+      a {
+        width: 60px;
+        height: 60px;
+        #medium {
+          display: none;
+        }
+        #large {
+          display: none;
+        }
+      }
+    }  
+  }
+}
+
+/* Phablet Styles
+  ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 551px) and (max-width: 749px){
+  .main_social {
+    height: 150px;
+    div {
+      height: 150px;
+      a {
+        width: 60px;
+        height: 60px;
+        #medium {
+          display: none;
+        }
+        #large {
+          display: none;
+        }
+      }
+    }  
+  }
+}
+
+/* Tablet Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) and (max-width: 999px){
+  .main_social {
+    height: 200px;
+    div {
+      height: 200px;
+      a {
+        width: 80px;
+        height: 80px;
+        #small {
+          display: none;
+        }
+        #large {
+          display: none;
+        }
+      }
+    }  
+  }
+}
+
+/* Desktop Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1000px) and (max-width: 1199px){
+  .main_social {
+    height: 250px;
+    div {
+      height: 250px;
+      a {
+        width: 80px;
+        height: 80px;
+        #small {
+          display: none;
+        }
+        #large {
+          display: none;
+        }
+      }
+    }  
+  }
+}
+
+/* Desktop HD Styles
+   ––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 1200px){
+  .main_social {
+    height: 300px;
+    div {
+      height: 300px;
+      a {
+        #small {
+          display: none;
+        }
+        #medium {
+          display: none;
+        }
+      }
+    }
+  }
+}
